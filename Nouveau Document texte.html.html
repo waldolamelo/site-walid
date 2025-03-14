@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn About Myself</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #ffffff;
+            color: #2c3e50;
+            text-align: center;
+        }
+        header {
+            padding: 20px;
+            background: #2c3e50;
+            color: white;
+            font-size: 2.5rem;
+            font-weight: 700;
+            position: relative;
+            z-index: 1000;
+        }
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            background: #f8f9fa;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 1;
+        }
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        .profile {
+            text-align: center;
+            position: relative;
+            transition: transform 0.3s;
+            z-index: 1;
+        }
+        .profile:hover {
+            transform: scale(1.05);
+        }
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            margin-bottom: 10px;
+        }
+        .profile .links {
+            display: none;
+            position: absolute;
+            top: 160px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(44, 62, 80, 0.9);
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .profile:hover .links {
+            display: block;
+        }
+        .links a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 5px 0;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Menu latéral */
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: -250px;
+            width: 250px;
+            height: 100%;
+            background: #2c3e50;
+            padding-top: 60px;
+            transition: 0.3s;
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+            z-index: 1002;
+        }
+        .sidebar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .sidebar a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        .menu-btn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 2rem;
+            color: white;
+            cursor: pointer;
+            background: none;
+            border: none;
+            z-index: 1003;
+        }
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 2rem;
+            color: white;
+            cursor: pointer;
+            background: none;
+            border: none;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .menu {
+                flex-direction: column;
+                align-items: center;
+            }
+            .profile img {
+                width: 120px;
+                height: 120px;
+            }
+            .sidebar {
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        Learn About Myself
+    </header>
+    
+    <div class="sidebar" id="sidebar">
+        <button class="close-btn" onclick="toggleMenu()">×</button>
+        <a href="#">Accueil</a>
+        <a href="paul-portfolio.html">Portfolio de Paul</a>
+        <a href="paul-cv.html">CV de Paul</a>
+        <a href="thomas-portfolio.html">Portfolio de Thomas</a>
+        <a href="thomas-cv.html">CV de Thomas</a>
+        <a href="erwan-portfolio.html">Portfolio d'Erwan</a>
+        <a href="erwan-cv.html">CV d'Erwan</a>
+        <a href="rafael-portfolio.html">Portfolio de Rafaël</a>
+        <a href="rafael-cv.html">CV de Rafaël</a>
+        <a href="walid-portfolio.html">Portfolio de Walid</a>
+        <a href="walid-cv.html">CV de Walid</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    
+    <div class="container">
+        <h2>Découvrez notre équipe</h2>
+        <div class="menu">
+            <div class="profile"><img src="PJ.jpg" alt="Paul-Jericho Pangan"><div class="links"><a href="paul-portfolio.html">Portfolio</a><a href="paul-cv.html">CV</a></div></div>
+            <div class="profile"><img src="thomas.jpg" alt="Thomas Jaquet"><div class="links"><a href="thomas-portfolio.html">Portfolio</a><a href="thomas-cv.html">CV</a></div></div>
+            <div class="profile"><img src="erwan.jpg" alt="Erwan Bigre"><div class="links"><a href="erwan-portfolio.html">Portfolio</a><a href="erwan-cv.html">CV</a></div></div>
+            <div class="profile"><img src="rafael.jpg" alt="Rafaël Mevelec"><div class="links"><a href="rafael-portfolio.html">Portfolio</a><a href="rafael-cv.html">CV</a></div></div>
+            <div class="profile"><img src="walid.jpg" alt="Walid Niaf"><div class="links"><a href="walid-portfolio.html">Portfolio</a><a href="walid-cv.html">CV</a></div></div>
+            <div style="width: 100%; text-align: center; padding: 20px 0;">
+                <a href="contact.html" style="display: inline-block; padding: 12px 20px; background: #2c3e50; color: white; text-decoration: none; border-radius: 8px; font-size: 1.2rem;">
+                    Contactez-nous
+                </a>
+            </div>    
+        </div>
+        </div>
+    </div>
+    
+    <script>
+        function toggleMenu() {
+            var sidebar = document.getElementById("sidebar");
+            sidebar.style.left = sidebar.style.left === "0px" ? "-250px" : "0px";
+        }
+    </script>
+</body>
+</html>

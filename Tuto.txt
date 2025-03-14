@@ -1,0 +1,4 @@
+Voici tous les dossiers que vous devez telecharger puis mettre un un dossier, si vous ne le faites pas par exemple quand vous voudriez aller sur une redirection du genre le CV de rafaël vous ne pouvez pas car vous n'avez pas le fichier.
+
+Aussi a chaque fois que vous avancez sur votre page que ce soit CV, Portfolio ou page principale oubliez pas de l'enregistrer sur votre pc biensur mais aussi l'enregistrer dans le drive en ecrasant l'ancien. 
+Exemple j'ai avancé sur CV-rafael.html bah je vais enregistrer dans le drive en remplacant l'ancien fichier par le nouveau sur lequel j'ai avancé
